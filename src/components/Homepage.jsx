@@ -36,10 +36,7 @@ function Homepage() {
   }
 
   return (
-    <div
-      className="text-white
-    "
-    >
+    <div className="text-white">
       <div className="container-fluid px-4">
         <div className="d-flex justify-content-between">
           <div className="d-flex">
@@ -55,19 +52,19 @@ function Homepage() {
                 >
                   Genres
                 </button>
-                <ul className="dropdown-menu">
+                <ul className="dropdown-menu text-white bg-light">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item bg-light" href="#">
                       Comedy
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item bg-light" href="#">
                       Drama
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item bg-light" href="#">
                       Thriller
                     </a>
                   </li>
@@ -81,13 +78,13 @@ function Homepage() {
           </div>
         </div>
 
-        <h4>Harry Potter</h4>
+        <h4>Trending Now</h4>
         <Carousel movies={harryPotter} />
 
-        <h4>Il Signore degli Anelli</h4>
+        <h4>Watch it Again</h4>
         <Carousel movies={lordOfTheRings} />
 
-        <h4>Star Wars</h4>
+        <h4>New Releases</h4>
         <Carousel movies={starWars} />
       </div>
     </div>
